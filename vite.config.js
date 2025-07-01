@@ -10,5 +10,11 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+base: '/', // Garante que a base da URL seja a raiz
+  publicDir: 'public', // Garante que a pasta public seja reconhecida
+  build: {
+    outDir: 'dist', // Onde os arquivos de build serão gerados
+    emptyOutDir: true, // Limpa a pasta de saída antes de cada build
+  },
 })
 
